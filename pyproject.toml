@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "wheel-delta"
+version = "0.1.0"
+description = "Compare wheel payloads without importing or extracting them"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "wheel-delta contributors"}]
+classifiers = ["Development Status :: 3 - Alpha", "Programming Language :: Python :: 3"]
+[project.scripts]
+wheel-delta = "wheel_delta.__main__:cli"
+[project.urls]
+Repository = "https://github.com/shkyyy18/wheel-delta"
+[tool.setuptools.packages.find]
+where = ["src"]

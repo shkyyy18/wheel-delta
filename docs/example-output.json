@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "synthetic_demo": true,
+  "package": "example-pkg",
+  "before_version": "1.0",
+  "after_version": "1.1",
+  "changes": [
+    {
+      "path": "example_pkg/a.py",
+      "change": "changed",
+      "kind": "payload",
+      "before_bytes": 10,
+      "after_bytes": 9
+    },
+    {
+      "path": "example_pkg/data.txt",
+      "change": "removed",
+      "kind": "payload",
+      "before_bytes": 16,
+      "after_bytes": null
+    },
+    {
+      "path": "example_pkg/new.py",
+      "change": "added",
+      "kind": "payload",
+      "before_bytes": null,
+      "after_bytes": 11
+    },
+    {
+      "path": "{dist-info}/METADATA",
+      "change": "changed",
+      "kind": "metadata",
+      "before_bytes": 53,
+      "after_bytes": 53
+    }
+  ],
+  "finding_count": 4,
+  "boundary": "Byte differences, not compatibility verdicts. dist-info/data version prefixes normalized. Metadata/RECORD changes are expected and still reported."
+}
