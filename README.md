@@ -65,3 +65,9 @@ python -m wheel_delta --demo
 ## Synthetic output preview
 
 ![Synthetic report; no private input](docs/preview.png)
+
+## Try a missing-resource review
+
+[Run the synthetic before/after trial](docs/missing-resource-trial.md): distinguish an
+intended version-only metadata change from a deliberately missing package template.
+Includes a control case and explains why `--fail-on-findings` flags both.

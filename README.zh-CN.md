@@ -34,3 +34,7 @@ python -m wheel_delta --demo
 ## Synthetic output preview
 
 ![Synthetic report; no private input](docs/preview.png)
+
+## 试用：发布时漏掉资源文件
+
+[运行合成 wheel 对照练习](docs/missing-resource-trial.md)：把仅版本元数据变化与故意遗漏模板文件区分开；包含正常对照，并说明为什么 `--fail-on-findings` 对两组都会报发现。
